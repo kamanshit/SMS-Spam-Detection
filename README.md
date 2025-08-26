@@ -1,54 +1,46 @@
-# SMS Spam Detection
+# 🚀 SMS Spam Detection
 
-A machine learning project that classifies text messages as Spam or Ham (Not Spam) using CountVectorizer and Multinomial Naive Bayes. The model is trained on a labeled SMS dataset and achieves 98% accuracy.
+This project is a Machine Learning application that classifies SMS messages as 📩 Spam or ✅ Ham (Not Spam).
+Built with Python, CountVectorizer, and Multinomial Naive Bayes, it achieves ⚡ 98% accuracy on the test data.
 
-# 📂 Project Structure
+📂 Project Structure
 sms-spam-detection/
 │
-├── app.py                # Main script (Streamlit or console app)
-├── model.pkl             # Trained spam detection model
-├── vectorizer.pkl        # CountVectorizer for text transformation
-├── dataset.csv           # (Optional) Original dataset
-├── requirements.txt      # Required dependencies
-└── README.md             # Project description and usage
+├── app.py            # Main script (Streamlit or CLI app)
+├── model.pkl         # Trained ML model
+├── vectorizer.pkl    # Vectorizer used for text transformation
+├── dataset.csv       # (Optional) Original dataset
+├── requirements.txt  # Dependencies
+└── README.md         # Project description
 
+🛠 How It Works
 
-⚙️ Installation
-1. Clone the repository
-git clone https://github.com/YOUR-USERNAME/sms-spam-detection.git
-cd sms-spam-detection
+🧹 Data Cleaning – Removes extra spaces, punctuation, and converts text to lowercase.
 
-2. Create a virtual environment (optional but recommended)
-python -m venv venv
-source venv/bin/activate   # For macOS/Linux
-venv\Scripts\activate      # For Windows
+🔠 Feature Extraction – Transforms text into numerical vectors using CountVectorizer.
 
-3. Install dependencies
-pip install -r requirements.txt
+🤖 Model Prediction – Uses Multinomial Naive Bayes to classify each message.
 
-🚀 Usage
-Run the Streamlit app
-streamlit run app.py
+📊 Output – Displays prediction as Spam or Ham.
 
+📊 Model Performance
 
-Then open the link in your browser (usually http://localhost:8501).
+🎯 Accuracy: ~98%
 
-📊 Model Details
+🧮 Algorithm: Multinomial Naive Bayes
 
-Algorithm: Multinomial Naive Bayes
+🔍 Feature Extraction: Bag of Words (CountVectorizer)
 
-Feature Extraction: CountVectorizer
+💡 Examples
+Message	Prediction
+"🎉 Congratulations! You’ve won a free iPhone. Click here to claim!"	📩 Spam
+"Hey, are we still on for dinner tonight?"	✅ Ham
+"Get your loan approved instantly, limited offer!"	📩 Spam
+"Don’t forget our meeting tomorrow morning."	✅ Ham
+🔥 Highlights
 
-Accuracy: ~98% on test data
+🚀 Fast and lightweight model
 
-📌 Example Predictions
-Input Message	Prediction
-"Win a free iPhone by clicking this link!"	Spam
-"Are we still meeting for lunch today?"	Ham
-🤝 Contributing
+🧠 Accurate and reliable predictions
 
-Feel free to fork this project, open issues, or submit pull requests to improve the code.
-
-📜 License
-
-This project is licensed under the MIT License.
+💻 Easy to run locally or deploy as a web app
