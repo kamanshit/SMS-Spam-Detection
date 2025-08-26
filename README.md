@@ -3,16 +3,6 @@
 This project is a Machine Learning application that classifies SMS messages as 📩 Spam or ✅ Ham (Not Spam).
 Built with Python, CountVectorizer, and Multinomial Naive Bayes, it achieves ⚡ 98% accuracy on the test data.
 
-📂 Project Structure
-sms-spam-detection/
-│
-├── app.py            # Main script (Streamlit or CLI app)
-├── model.pkl         # Trained ML model
-├── vectorizer.pkl    # Vectorizer used for text transformation
-├── dataset.csv       # (Optional) Original dataset
-├── requirements.txt  # Dependencies
-└── README.md         # Project description
-
 🛠 How It Works
 
 🧹 Data Cleaning – Removes extra spaces, punctuation, and converts text to lowercase.
